@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "8283e9f5-1b4c-4dcd-b100-0fd233ab1938",
+		"name": "Jokes API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Ping",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all jokes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/jokes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"jokes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Joke By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/jokes/622ceff2282a378583445e51",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"jokes",
+						"622ceff2282a378583445e51"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Joke By Id Copy",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"setup\":\"What did the zero say to the eight?\",\r\n    \"punchline\":\"Nice belt!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/jokes/622ceea0282a378583445e4d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"jokes",
+						"622ceea0282a378583445e4d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Joke",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/jokes/622c71b6d5aa9a6c735db45a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"jokes",
+						"622c71b6d5aa9a6c735db45a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Joke",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"setup\":\"What did the zero say to the eight?\",\r\n    \"punchline\":\"That belt looks good on you.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/jokes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"jokes"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
